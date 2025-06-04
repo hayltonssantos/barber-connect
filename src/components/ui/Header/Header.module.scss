@@ -1,0 +1,150 @@
+// src/components/ui/Header/Header.module.scss
+.header {
+  background: linear-gradient(135deg, $primary-color 0%, darken($primary-color, 10%) 100%) !important;
+  border-bottom: 3px solid $extra-color !important;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3) !important;
+  padding: 1rem 0 !important;
+
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 2rem;
+  }
+
+  .brand {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+
+    .brandText {
+      font-family: $primary-font;
+      font-size: 1.8rem;
+      color: $extra-color !important;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+      margin: 0;
+    }
+
+    .barbeariaName {
+      font-size: 0.9rem;
+      color: rgba(249, 249, 249, 0.8);
+      font-weight: 500;
+    }
+  }
+
+  .nav {
+    display: flex;
+    gap: 1rem;
+
+    .nav-link {
+      color: $secondary-color !important;
+      font-weight: 600 !important;
+      padding: 0.75rem 1rem !important;
+      border-radius: 8px !important;
+      transition: all 0.3s ease !important;
+
+      &:hover {
+        background: rgba(185, 149, 74, 0.2) !important;
+        color: $extra-color !important;
+        transform: translateY(-1px) !important;
+      }
+    }
+  }
+
+  .userSection {
+    .userButton {
+      display: flex !important;
+      align-items: center !important;
+      gap: 0.75rem !important;
+      padding: 0.5rem 1rem !important;
+      border: 2px solid rgba(249, 249, 249, 0.2) !important;
+      border-radius: 25px !important;
+      background: rgba(249, 249, 249, 0.1) !important;
+      transition: all 0.3s ease !important;
+
+      &:hover {
+        border-color: $extra-color !important;
+        background: rgba(185, 149, 74, 0.2) !important;
+        transform: translateY(-1px) !important;
+      }
+
+      .userAvatar {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background: $extra-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        color: white;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+      }
+
+      .userName {
+        color: $secondary-color;
+        font-weight: 600;
+      }
+    }
+
+    .dropdownMenu {
+      background: rgba(0, 29, 34, 0.95) !important;
+      border: 1px solid rgba(249, 249, 249, 0.1) !important;
+      border-radius: 12px !important;
+      backdrop-filter: blur(10px) !important;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3) !important;
+
+      .dropdown-item {
+        color: $secondary-color !important;
+        padding: 0.75rem 1rem !important;
+        font-weight: 500 !important;
+        border-radius: 8px !important;
+        margin: 0.25rem !important;
+
+        &:hover {
+          background: rgba(185, 149, 74, 0.2) !important;
+          color: $extra-color !important;
+        }
+
+        &.logoutItem {
+          color: #e53e3e !important;
+
+          &:hover {
+            background: rgba(229, 62, 62, 0.2) !important;
+            color: #e53e3e !important;
+          }
+        }
+      }
+
+      .dropdown-divider {
+        border-color: rgba(249, 249, 249, 0.1) !important;
+        margin: 0.5rem 0 !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    .container {
+      padding: 0 1rem;
+    }
+
+    .nav {
+      display: none;
+    }
+
+    .brand .brandText {
+      font-size: 1.5rem;
+    }
+
+    .userSection .userButton {
+      .userName {
+        display: none;
+      }
+    }
+  }
+}
