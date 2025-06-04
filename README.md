@@ -93,4 +93,60 @@ Sistema completo de gestão para barbearias desenvolvido com React + TypeScript 
 ✅ **Atualizações em tempo real** - Sincronização instantânea  
 
 ## 🔧 Instalação
+Clone o repositório
+git clone https://github.com/seu-usuario/barber-connect.git
 
+Entre no diretório
+cd barber-connect
+
+Instale as dependências
+npm install
+
+Configure as variáveis de ambiente
+cp .env.example .env.local
+
+Inicie o servidor de desenvolvimento
+npm run dev
+
+text
+
+## 🌐 Variáveis de Ambiente
+
+VITE_FIREBASE_API_KEY=sua_api_key
+VITE_FIREBASE_AUTH_DOMAIN=seu_auth_domain
+VITE_FIREBASE_PROJECT_ID=seu_project_id
+VITE_FIREBASE_STORAGE_BUCKET=seu_storage_bucket
+VITE_FIREBASE_MESSAGING_SENDER_ID=seu_sender_id
+VITE_FIREBASE_APP_ID=seu_app_id
+
+text
+
+## 📸 Screenshots
+
+### Dashboard Principal
+![Dashboard](./docs/screenshots/dashboard.png)
+
+### Sistema de Agendamentos
+![Agendamentos](./docs/screenshots/agendamentos.png)
+
+### Gestão de Funcionários
+![Funcionários](./docs/screenshots/funcionarios.png)
+
+## 🎯 Roadmap
+
+- [ ] **Notificações SMS/Email** - Lembretes automáticos
+- [ ] **Relatórios Avançados** - Analytics detalhados
+- [ ] **App Mobile** - Aplicativo nativo
+- [ ] **Integração de Pagamentos** - PIX e cartões
+- [ ] **Sistema de Fidelidade** - Programa de pontos
+- [ ] **API Pública** - Integrações externas
+
+## 🤝 Contribuição
+
+Contribuições são bem-vindas! Veja nosso [guia de contribuição](CONTRIBUTING.md).
+
+1. Fork o projeto
+2. Crie uma branch (`git checkout -b feature/nova-funcionalidade`)
+3. Commit suas mudanças (`git commit -m 'Adiciona nova funcionalidade'`)
+4. Push para a branch (`git push origin feature/nova-funcionalidade`)
+5. Abra um Pull Request
